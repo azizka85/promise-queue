@@ -1,0 +1,22 @@
+{
+  "name": "@azizka/promise-queue",
+  "version": "1.0.0",
+  "description": "Queue of promises",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "Promise",
+    "Queue",
+    "JavaScript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "author": "Aziz Kudaikulov <aziz.kudaikulov@gmail.com>",
+  "license": "MIT"
+}

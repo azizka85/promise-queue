@@ -1,0 +1,7 @@
+.git*
+.gitignore
+
+jsconfig.json
+
+node_modules/
+tests/

@@ -11,12 +11,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/azizka85/promise-queue.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/azizka85/promise-queue/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/azizka85/promise-queue",
   "author": "Aziz Kudaikulov <aziz.kudaikulov@gmail.com>",
   "license": "MIT"
 }

@@ -1,6 +1,6 @@
-export class PromiseQueue {
+export class PromiseQueue<TaskData = any> {
   protected queueStarted: boolean;
-  protected tasks: ((data?: any) => any | Promise<any>)[];
+  protected tasks: ((data?: TaskData) => TaskData | void | Promise<TaskData> | Promise<void>)[];
 
   protected started?: () => void;
   protected finished?: () => void;
@@ -9,11 +9,11 @@ export class PromiseQueue {
   constructor(
     started?: () => void, 
     finished?: () => void, 
-    taskFinished?: (data?: any) => void
+    taskFinished?: (data?: TaskData) => void
   );
 
   protected start(): Promise<void>;
 
-  addTask(func: (data?: any) => any | Promise<any>): void;
+  addTask(func: (data?: TaskData) => TaskData | void | Promise<TaskData> | Promise<void>): void;
   stop(): void;
 }

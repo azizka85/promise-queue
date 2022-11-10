@@ -9,8 +9,15 @@ describe('PromiseQueue test', () => {
 
   test('should run asynchronous tasks serially', () => {
     let expectData = 1;
+
+    /**
+     * @type {number | undefined}
+     */
     let globalData;
 
+    /**
+     * @type {PromiseQueue<number>}
+     */
     const queue = new PromiseQueue(
       () => expect(globalData).toBeFalsy(),
       () => expect(globalData).toEqual(3),

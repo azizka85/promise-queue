@@ -1,6 +1,6 @@
 {
   "name": "@azizka/promise-queue",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Queue of promises",
   "main": "index.js",
   "scripts": {},
@@ -18,5 +18,8 @@
   },
   "homepage": "https://github.com/azizka85/promise-queue",
   "author": "Aziz Kudaikulov <aziz.kudaikulov@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
 }

@@ -8,15 +8,20 @@ describe('PromiseQueue test', () => {
   beforeAll(() => jest.useFakeTimers());
 
   test('should run asynchronous tasks serially', () => {
+    /**
+     * expected value
+     * @type {number}
+     */
     let expectData = 1;
 
     /**
+     * to compare
      * @type {number | undefined}
      */
     let globalData;
 
     /**
-     * @type {PromiseQueue<number>}
+     * @type {PromiseQueue<number | undefined>}
      */
     const queue = new PromiseQueue(
       () => expect(globalData).toBeFalsy(),
@@ -58,6 +63,9 @@ describe('PromiseQueue test', () => {
   });
 
   test('should cancel all tasks in queue', () => {
+    /**
+     * @type {PromiseQueue<number | undefined>}
+     */
     const queue = new PromiseQueue();
 
     queue.addTask(async (data) => {

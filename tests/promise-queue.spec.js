@@ -30,7 +30,7 @@ describe('PromiseQueue test', () => {
         expect(data).toEqual(expectData);
         expectData++;
       }
-    );    
+    );  
 
     queue.addTask(async (data) => {
       expect(data).toBeFalsy();

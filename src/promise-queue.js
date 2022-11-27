@@ -42,7 +42,7 @@ class PromiseQueue {
    * @param {(() => void) | undefined} finished Handler to process the event when the queue is finished to process tasks
    * @param {((data?: TaskData) => void) | undefined} taskFinished Handler to process the event when the task is finished process and removes from the queue
    */
-  constructor(started, finished, taskFinished) {
+  constructor(started = undefined, finished = undefined, taskFinished = undefined) {
     this.started = started;
     this.finished = finished;
     this.taskFinished = taskFinished;

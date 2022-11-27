@@ -7,7 +7,7 @@ export class PromiseQueue<TaskData> {
      * @param {(() => void) | undefined} finished Handler to process the event when the queue is finished to process tasks
      * @param {((data?: TaskData) => void) | undefined} taskFinished Handler to process the event when the task is finished process and removes from the queue
      */
-    constructor(started: (() => void) | undefined, finished: (() => void) | undefined, taskFinished: (data?: TaskData) => void);
+    constructor(started?: (() => void) | undefined, finished?: (() => void) | undefined, taskFinished?: (data?: TaskData) => void);
     /**
      * Indicate that this queue is started to process tasks
      * @type {boolean}

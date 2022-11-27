@@ -1,6 +1,6 @@
 {
   "name": "@azizka/promise-queue",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Queue of promises",
   "main": "index.js",
   "scripts": {
